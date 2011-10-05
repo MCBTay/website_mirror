@@ -1,16 +1,16 @@
 <header>
   <nav>
     <ul>
-      <li class='about'>
+      <li class='about <%= is_active?(params[:action], 'about') %>'>
         <%= link_to "About", root_path %>
       </li>
-      <li class='blog'>
+      <li class='blog <%= is_active?(params[:action], 'blog') %>'>
         <%= link_to "Blog", blog_path %>
       </li>
-      <li class='portfolio'>
+      <li class='portfolio <%= is_active?(params[:action], 'portfolio') %>'>
         <%= link_to "Portfolio", portfolio_path %>
       </li>
-      <li class='contact'>
+      <li class='contact <%= is_active?(params[:action], 'contact') %>'>
         <%= link_to "Contact", contact_path %>
       </li>
     </ul>

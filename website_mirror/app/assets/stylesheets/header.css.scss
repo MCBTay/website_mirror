@@ -28,28 +28,28 @@ header {
 
       &.about {
         background-position: 0px 0px;  //not required but just to ensure
-        &:hover {
+        &:hover, &.active {
           background-position: 0px -25px;
         }
       }
 
       &.blog {
         background-position: -122px 0px;
-        &:hover {
+        &:hover, &.active {
           background-position: -122px -25px;
         }
       }
 
       &.portfolio {
         background-position: -244px 0px;
-        &:hover {
+        &:hover, &.active {
           background-position: -244px -25px;
         }
       }
 
       &.contact {
         background-position: -366px 0px;
-        &:hover {
+        &:hover, &.active {
           background-position: -366px -25px;
         }
       }
