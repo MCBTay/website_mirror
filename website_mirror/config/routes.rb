@@ -1,7 +1,9 @@
 WebsiteMirror::Application.routes.draw do
-  get "pages/about"
-  get "pages/blog"
-  get "pages/portfolio"
-  get "pages/contact"
+  match '/about',     :to => 'pages#about'
+  match '/blog',      :to => 'pages#blog'
+  match '/portfolio', :to => 'pages#portfolio'
+  match '/contact',   :to => 'pages#contact'
+
+  root :to => 'pages#about'
 end
 

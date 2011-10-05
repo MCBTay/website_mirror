@@ -1,3 +1,42 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$baby-blue: #20b1ed;
+
+.container {
+  width: 800px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+body {
+  background: #cff;
+}
+
+section {
+  font-size: 120%;
+  padding: 20px;
+  background: $baby-blue;
+
+  h1 {
+    font-size: 200%;
+  }
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+
+  &:hover {
+    color: #069;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #069;
+  }
+}
+
