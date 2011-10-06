@@ -4,39 +4,148 @@
 
 $baby-blue: #20b1ed;
 
-.container {
-  width: 800px;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
 body {
   background: #cff;
 }
 
 section {
-  font-size: 120%;
-  padding: 20px;
+  padding:    20px;
   background: $baby-blue;
+}
 
-  h1 {
-    font-size: 200%;
+.container {
+  width:          800px;
+  padding-top:    2em;
+  padding-bottom: 2em;
+
+  h5 {
+    color:     #ffffff;
+    font-size: 115%;
   }
 }
 
-/* Links */
-
-a {
-  color: #09c;
-  text-decoration: none;
-
-  &:hover {
-    color: #069;
-    text-decoration: underline;
+section {
+  //--- Start About page styling
+  #site_img, #me_img {
+    width:      195px;
+    height:     40px;
+    margin:     1em auto;
+    background: url('about.png');
   }
 
-  &:visited {
-    color: #069;
+  #me_img {
+    background-position: 0px -40px;
   }
+  //--- End About page styling
+  //--- Start Blog page styling
+  //--- End Blog page styling
+  //--- Start Portfolio page styling
+  #resume_line {
+    width:      100%;
+    text-align: center;
+
+    a:link, a:visited {
+      color:           #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color:           #000;
+      text-decoration: underline;
+    }
+  }
+
+  .thumbnail {
+    background:    #fff;
+    width:         230px;
+    height:        138px;
+    float:         left;
+    margin-left:   1.125em;
+    margin-bottom: 2em;
+    cursor:        pointer;
+    cursor:        hand;
+  }
+
+  .link {
+    float:       left;
+    width:       230px;
+    margin-top:  14em;
+    margin-left: -23em;
+    font-size:   10px;
+    font-weight: bold;
+    text-align:  center;
+
+    a:visited, a:link {
+      color:           #fff;
+      text-decoration: none;
+    }
+  }
+
+  .pic_list {
+    display: none;
+  }
+
+  #moe        { background: url('portfolio/thumbs/moe_thumb.png'); }
+  #daydreamer { background: url('portfolio/thumbs/daydreamer_thumb.png'); }
+  #ucps       { background: url('portfolio/thumbs/ucps_thumb.png'); }
+  #metube     { background: url('portfolio/thumbs/metube_thumb.png'); }
+
+  //--- End Portfolio page styling
+
+  //--- Start Contact page styling
+  #site_links {  // site_links pertains to the network links on contact page
+    width:      250px;
+    margin:     1em auto;
+    padding:    0;
+    list-style: none;
+
+    li {  // sets size of each button, and spaces them out
+      float:        left;
+      margin-right: 10px;
+      width:        50px;
+      height:       50px;
+      background:   url('contact.png');
+
+      &.facebook {  // moves sprite for facebook button
+        background-position: 0px 0px;
+
+        &:hover {  // moves sprite for hover action
+          background-position: 0px -49px;
+        }
+      }
+
+      &.googleplus { // moves sprite for google+ button
+        background-position: -50px 0px;
+
+        &:hover { // moves sprite for hover action
+          background-position: -50px -49px;
+        }
+      }
+
+      &.linkedin { // moves sprite for linkedin button
+        background-position: -100px 0px;
+
+        &:hover { // moves sprite for hover action
+          background-position: -100px -49px;
+        }
+      }
+
+      &.github { // moves sprite for github button
+        background-position: -150px 0px;
+
+        &:hover { // moves sprite for hover action
+          background-position: -150px -49px;
+        }
+      }
+
+      a { // makes the whole button clickable and removes the text
+        display:     block;
+        width:       50px;
+        height:      50px;
+        text-indent: -9999px;
+      }
+    }
+  }
+  //--- End Contact page styling
 }
 
