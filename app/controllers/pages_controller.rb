@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def about
+    #test
     @title = "About"
   end
 
