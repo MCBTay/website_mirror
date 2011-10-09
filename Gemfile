@@ -11,8 +11,8 @@ end
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'sqlite3', '1.3.4', :group => :development
-#need to look for a new pagination gem... patrick suggested kaminari (https://github.com/amatsuda/kaminari)
 gem 'rack', '1.3.4'
+gem 'kaminari'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
