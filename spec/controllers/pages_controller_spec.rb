@@ -15,6 +15,18 @@ describe PagesController do
     end
   end
 
+  describe "GET 'blog'" do
+    it "should be successful" do
+      get 'blog'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'blog'
+      response.should have_selector("title", :content => "Blog :: Bryan Taylor")
+    end
+  end
+
   describe "GET 'portfolio'" do
     it "should be successful" do
       get 'portfolio'

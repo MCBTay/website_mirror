@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$baby-blue:  #20b1ed;
-$gray:       #555555;
-$light-gray: #777777;
+$baby-blue: #20b1ed;
 
 body {
   background: #cff;
@@ -40,44 +38,6 @@ section {
   }
   //--- End About page styling
   //--- Start Blog page styling
-  .post-item {
-    width: 90%;
-    margin: 2em auto;
-    text-align: justify;
-
-    a:link, a:visited {
-      color: $gray;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .post-title {
-      font-weight: bold;
-      padding-bottom: 10px;
-      color: $gray;
-    }
-
-    .post-content {
-      font-weight: normal;
-    }
-
-    .post-time {
-      font-style: italic;
-      padding-top: 5px;
-      color: $light-gray;
-    }
-  }
-
-  h2, h5, h6 {
-    color: #ffffff;
-    padding: 0em;
-    margin: 0em;
-  }
-
-
   //--- End Blog page styling
   //--- Start Portfolio page styling
   #resume_line {
