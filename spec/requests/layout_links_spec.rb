@@ -7,12 +7,6 @@ describe "LayoutLinks" do
     response.should have_selector('li', :class => "about active")
   end
 
-  it "should have a Blog page at '/blog'" do
-    get '/blog'
-    response.should have_selector('title', :content => "Blog")
-    response.should have_selector('li', :class => "blog active")
-  end
-
   it "should have a Portfolio page at '/portfolio'" do
     get '/portfolio'
     response.should have_selector('title', :content => "Portfolio")
